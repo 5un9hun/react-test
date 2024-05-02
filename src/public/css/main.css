@@ -92,17 +92,18 @@ body {
     width:100%;
 }
 
-.movie > div > img {
+.movie > div > a > img {
     width: 70%;
     height: 100%;
 }
 
-.movie > div > p {
+.movie-genre > p {
     padding: 10px;
     border: 1px solid red;
+    border-radius: 10px;
 }
 
-.movie > div > p:hover {
+.movie-genre > p:hover {
     padding: 10px;
     background-color: #ff0000;
     border: 1px solid red;
@@ -130,23 +131,43 @@ body {
 .mypage-menu {
     width: 200px;
     background-color: #2d2d2d;
-    border-radius: 5%;
+    border-radius: 10px;
     opacity: 80%;
     padding: 20px;
 }
 
+.mypage-menu > a {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mypage-menu > a:nth-child(1) {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.mypage-menu > a:nth-last-child(1) {
+    color: #ff3636;
+}
+
 .mypage-main {
-    width: 600px;
+    width: 800px;
     background-color: #2d2d2d;
     margin-left: 10%;
     box-sizing: border-box;
     opacity: 80%;
-    border-radius: 3%;
+    border-radius: 10px;
     padding: 40px;
 }
 
+.mypage-main > a:nth-child(1) {
+    font-size: 20px;
+}
+
 #menu-form > input {
-    width: 60%;
+    width: 50%;
     height: 48px;
     padding: 0 10px;
     box-sizing: border-box;
@@ -158,7 +179,7 @@ body {
 
 #menu-form > input[type="submit"] {
     color: #fff;
-    
+    width: 10%;
     font-size: 16px;
     background-color: #ff0000;
     margin-top: 20px;
@@ -168,4 +189,99 @@ body {
     font-size: 16px;
     background-color: #c91818;
     margin-top: 20px;
+}
+
+
+/* information.js */
+
+.information-movie {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.movie-poster > img {
+    width:60%;
+}
+
+.movie-title {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.movie-title > div {
+    margin-right: 36%;
+}
+
+.movie-title > button {
+    width:100px;
+    margin-left:36%;
+    background-color: #008800;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.movie-summary {
+    padding-bottom: 5%;
+}
+
+.rating {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.rating > p {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.star-rating {
+    display: flex;
+}
+
+.star {
+    appearance: none;
+    padding: 1px;
+}
+
+.star::after {
+    content: '☆';
+    color: hsl(60, 80%, 45%);
+    font-size: 20px;
+}
+
+.star:hover::after,
+.star:has(~ .star:hover)::after,
+.star:checked::after,
+.star:has(~ .star:checked)::after {
+    content: '★';
+}
+
+.star:hover ~ .star::after {
+    content: '☆';
+}
+
+.movie-comment {
+    background-color: #2d2d2d;
+    text-align: left;
+    padding: 40px;
+    margin-bottom: 3%;
+    border-radius: 10px;
+}
+
+/* list.js */
+
+.movie-list {
+    display: grid;
+    column-gap: 50px;
+}
+
+.grid-item {
+    display: inline-grid;
+}
+
+.grid-img {
+    width: 30%;
 }

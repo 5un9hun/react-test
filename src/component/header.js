@@ -14,9 +14,9 @@ function Header(props) {
     return (
         <header>
             <a href="/">GachaPEDIA</a>
-            <nav className="">
-                <a>영화</a>
-                <a>TOP 100</a>
+            <nav className="list-kind">
+                <a href="/list?kind=m">영화</a>
+                <a href="/list?kind=t">TOP 100</a>
             </nav>
             <nav>
                 <input type="search" name="search" placeholder="검색"/>

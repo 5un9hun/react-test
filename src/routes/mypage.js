@@ -2,20 +2,21 @@ import React from 'react';
 import Header from '../component/header';
 import '../public/css/main.css'
 
-function Main(props) {
+function MyPage(props) {
     return (
         <div className='App'>
             <Header />
             <div className="logo">GachaPEDIA</div>
             <div className='mypage'>
                 <div className='mypage-menu'>
-                    <h3>메뉴</h3>
-                    <p>?</p>
-                    <p>?</p>
-                    <p>?</p>
+                    <a>메뉴</a>
+                    <a>회원정보 수정</a>
+                    <a>북마크 관리</a>
+                    <a>그 외</a>
+                    <a>회원탈퇴</a>
                 </div>
                 <div className='mypage-main'>
-                    <h3>회원정보수정</h3>
+                    <p>회원정보수정</p>
                     <form action="/" method="post" id="menu-form" >
                         <input type="submit" value="수정" />
                     </form>
@@ -25,4 +26,4 @@ function Main(props) {
     );
 }
 
-export default Main;
+export default MyPage;

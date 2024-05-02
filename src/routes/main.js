@@ -4,7 +4,7 @@ import '../public/css/main.css'
 import Poster from '../public/img/poster.jpg';
 
 function Reroll() {
-    
+
 }
 
 function Main(props) {
@@ -13,8 +13,8 @@ function Main(props) {
             <Header />
             <div className="logo">GachaPEDIA</div>
             <div className='movie'>
-                <div><img src={Poster} /></div>
-                <div>
+                <div><a href='/information'><img src={Poster} /></a></div>
+                <div className='movie-genre'>
                     <p>액션</p>
                     <p>어드벤쳐</p>
                     <p>코메디</p>
