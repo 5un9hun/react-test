@@ -33,19 +33,20 @@ header > a {
     font-size: 50px;
     color: #FFFFFF;
 }
-
+/* 메뉴 */
 nav:nth-child(2) {
     margin-right:10%;
 }
 
-nav:nth-child(2) > a {
+nav:nth-child(2) > a, span {
     font-size: 20px;
     margin-right: 200px;
 }
-
+/* 검색 */
 nav:nth-child(3) {
     width: 15%;
 }
+
 
 nav:nth-child(3) > input {
     width: 100%;
@@ -57,7 +58,8 @@ nav:nth-child(3) > input {
     color: #000000;
 }
 
-nav:nth-child(4) > a {
+/* 회원가입 */
+nav:nth-child(4) > a, span {
     font-size: 20px;
     margin-right: 15px;
     color: #FFFFFF;
