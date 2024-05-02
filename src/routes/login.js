@@ -11,20 +11,19 @@ const Login = () => {
         e.preventDefault();
         try {
             const res = await axios.post("/api/login", {
-                username,
-                password,
+                username:username,
+                password:password,
             })
-            console.log(res.data)
+            //console.log(res.data)
+            if(res.data['token'] == 'good') {
+                alert('로그인 성공')
+            }
+            else {
+                alert("아이디 또는 비밀번호가 다릅니다.") 
+            }
         } catch(err) {
             console.error(err)
         }
-        
-        /*if(response['token'] == 'good') {
-            alert('로그인 성공')
-        }
-        else {
-            alert("아이디 또는 비밀번호가 다릅니다.") 
-        }*/
     };
 
     return (
