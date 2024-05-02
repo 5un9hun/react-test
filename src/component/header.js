@@ -14,7 +14,7 @@ function Header(props) {
     return (
         <header>
             <a href="/">GachaPEDIA</a>
-            <nav class="">
+            <nav className="">
                 <a>영화</a>
                 <a>TOP 100</a>
             </nav>
@@ -22,7 +22,8 @@ function Header(props) {
                 <input type="search" name="search" placeholder="검색"/>
             </nav>
             <nav>
-                {loginStatus}
+                {loginStatus[0]}
+                {loginStatus[1]}
             </nav>
         </header>
     );

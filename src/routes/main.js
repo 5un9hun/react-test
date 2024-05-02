@@ -3,6 +3,10 @@ import Header from '../component/header';
 import '../public/css/main.css'
 import Poster from '../public/img/poster.jpg';
 
+function Reroll() {
+    
+}
+
 function Main(props) {
     return (
         <div className='App'>

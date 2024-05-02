@@ -22,8 +22,8 @@ const Register = () => {
             })
             //console.log(res.data)
             alert(res.data['message'])
-            if(res.data['success'] === "true") {
-                //window.location.href="/"
+            if(res.data['success'] === true) {
+                window.location.href="/"
             }
         } catch(err) {
             console.error(err)

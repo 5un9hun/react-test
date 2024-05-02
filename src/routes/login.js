@@ -25,6 +25,7 @@ const Login = () => {
             alert(res.data['message'])
             if(res.data['success'] === true) {
                 const expires = new Date()
+                expires.setMinutes(expires.getMinutes() + 60)
                 cookie.save('userid', res.data['memberId'], {
                     path : '/',
                     expires,
