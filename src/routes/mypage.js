@@ -7,12 +7,19 @@ function Main(props) {
         <div className='App'>
             <Header />
             <div className="logo">GachaPEDIA</div>
-            <div className='login-wrapper'>
-                <h3>회원정보수정</h3>
-                <form action="/" method="post" id="login-form" >
-                    
-                    <input type="submit" value="수정" />
-                </form>
+            <div className='mypage'>
+                <div className='mypage-menu'>
+                    <h3>메뉴</h3>
+                    <p>?</p>
+                    <p>?</p>
+                    <p>?</p>
+                </div>
+                <div className='mypage-main'>
+                    <h3>회원정보수정</h3>
+                    <form action="/" method="post" id="menu-form" >
+                        <input type="submit" value="수정" />
+                    </form>
+                </div>
             </div>
         </div>
     );

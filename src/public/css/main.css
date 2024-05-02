@@ -120,3 +120,52 @@ body {
     border-radius: 10px;
 }
 
+/* mypage.js */
+
+.mypage {
+    display: flex;
+    width: 100%;
+}
+
+.mypage-menu {
+    width: 200px;
+    background-color: #2d2d2d;
+    border-radius: 5%;
+    opacity: 80%;
+    padding: 20px;
+}
+
+.mypage-main {
+    width: 600px;
+    background-color: #2d2d2d;
+    margin-left: 10%;
+    box-sizing: border-box;
+    opacity: 80%;
+    border-radius: 3%;
+    padding: 40px;
+}
+
+#menu-form > input {
+    width: 60%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    background-color: #969696;
+    color: #FFFFFF;
+}
+
+#menu-form > input[type="submit"] {
+    color: #fff;
+    
+    font-size: 16px;
+    background-color: #ff0000;
+    margin-top: 20px;
+}
+
+#menu-form > input[type="submit"]:hover {
+    font-size: 16px;
+    background-color: #c91818;
+    margin-top: 20px;
+}
