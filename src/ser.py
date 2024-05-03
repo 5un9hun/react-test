@@ -10,7 +10,6 @@ def login():
     print(username)
     print(password)
     if(username == "5un9hun"):
-        print(1)
         data = {
             "success": True,
             "message": "로그인 성공",

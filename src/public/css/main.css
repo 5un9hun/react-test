@@ -274,14 +274,17 @@ body {
 /* list.js */
 
 .movie-list {
+    width:1200px;
     display: grid;
-    column-gap: 50px;
+    column-gap: 65px;
+    grid-template-columns: repeat(6, 12%);
 }
 
 .grid-item {
     display: inline-grid;
+    padding-bottom: 50%;
 }
 
 .grid-img {
-    width: 30%;
+    width: 100%;
 }

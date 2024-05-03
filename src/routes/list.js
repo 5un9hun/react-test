@@ -9,12 +9,8 @@ function List(props) {
             <Header />
             <div className="logo">GachaPEDIA</div>
             <div className='movie-list'>
-                <div className="grid-item">1</div>
-                <div className="grid-item">1</div>
-                <div className="grid-item">1</div>
-                <div className="grid-item">1</div>
+                <div className='grid-item'><img className='grid-img' src={Poster} /></div>
             </div>
-            
         </div>
     );
 }
