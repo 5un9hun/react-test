@@ -1,9 +1,15 @@
+@font-face {
+    font-family : 'user-font';
+    src : url(../font/PretendardVariable.ttf)
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     padding-top: 75px;
+    font-family: 'user-font';
     background: #EEE;
 }
 

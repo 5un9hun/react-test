@@ -26,7 +26,7 @@ function Main(props) {
                 </div>
             </div>
             <div id="reroll">
-                <button>Reroll</button>
+                <button>Gacha</button>
             </div>
         </div>
     );
